@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_bottom_sheet"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_handle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_store"
+            android:tint="@color/blue" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/grey" />
+
+        <EditText
+            android:id="@+id/storeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@color/white"
+            android:fontFamily="@font/vazir"
+            android:gravity="right"
+            android:hint="نام فروشگاه"
+            android:inputType="text"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/blue"
+            android:fontFamily="@font/vazir"
+            android:textDirection="rtl"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:text="رستوران"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioCloths"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/blue"
+            android:fontFamily="@font/vazir"
+            android:textColor="@color/black"
+            android:textDirection="rtl"
+            android:textSize="15sp"
+            android:layout_marginRight="20dp"
+            android:text="پوشاک"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioCoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/blue"
+            android:fontFamily="@font/vazir"
+            android:textDirection="rtl"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:text="کافی شاپ"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:buttonTint="@color/blue"
+            android:fontFamily="@font/vazir"
+            android:textDirection="rtl"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:text="میوه فروشی"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:id="@+id/latTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir"
+            android:gravity="right"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="طول جغرافیایی:"
+            android:textColor="@color/blue"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/longTextView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/vazir"
+            android:gravity="right"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="عرض جغرافیایی:"
+            android:textColor="@color/blue"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_fill"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazir"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ارسال"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notsendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_outline"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/vazir"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="بیخیال"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

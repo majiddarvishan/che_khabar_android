@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Takhfif</string>
+    <string-array name="category">
+        <item>رستوران</item>
+        <item>کافی شاپ</item>
+        <item>هایپر مارکت</item>
+        <item>میوه فروشی</item>
+        <item>صنایع دستی</item>
+        <item>بستنی فروشی</item>
+        <item>پوشاک</item>
+        <item>شیرینی فروشی</item>
+    </string-array>
+</resources>
